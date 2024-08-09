@@ -1,7 +1,7 @@
+const PageController = require('./pages/controller')
+
 async function Routes(app) {
-  app.get('/', (req, res) => {
-    res.send('hello world')
-  })
+  PageController(app)
 }
 
 module.exports = Routes
