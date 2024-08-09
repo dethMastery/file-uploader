@@ -1,7 +1,11 @@
 async function UploadPage(req, res) {
-  console.log(req.body)
+  console.log(req.file)
 
-  res.send('a')
+  if (req.file == undefined) {
+    res.send('blank')
+  } else {
+    res.send('a')
+  }
 }
 
 module.exports = UploadPage
