@@ -1,22 +1,23 @@
 const fs = require('fs')
+const nameRandom = require('../../modules/random')
 
 async function statusFunction(file, path) {
   let message
 
   if (file != undefined) {
-    console.log(file)
-    console.log(`${path}/${file.path}`)
+    let parse = await nameRandom(path)
+    let fileType = file.originalname.split('.').reverse()[0]
 
     fs.renameSync(
       `${path}/${file.path}`,
-      `${path}/uploads/${file.originalname}`
+      `${path}/uploads/${parse}.${fileType}`
     )
 
     message = {
       status: 1,
       message: 'upload complete',
       payload: {
-        url: `${process.env.CDN_URI}${file.originalname}`,
+        url: `${process.env.CDN_URI}${parse}.${fileType}`,
       },
     }
   } else {

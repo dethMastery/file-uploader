@@ -23,6 +23,7 @@ function callback(returnCall) {
 }
 
 async function upload() {
+  submitButton.classList.add('hidden')
   progress.classList.remove('hidden')
 
   const file = input.files[0]
@@ -51,7 +52,6 @@ async function upload() {
     })
 
     progress.classList.add('hidden')
-    submitButton.classList.add('hidden')
     container.classList.add('hidden')
 
     result.classList.remove('hidden')
