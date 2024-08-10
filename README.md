@@ -23,3 +23,7 @@ yarn start
 ```
 
 And like the above. It's okay to use `npm` or `pnpm`.
+
+### Too lazy?
+
+Are you too lazy to set-up everything? For my recommend to use DockerFile from katsuDocker instead :D
