@@ -11,5 +11,5 @@ const upload = multer({ dest: './uploads' })
 const PORT = process.env.PORT || 3000
 
 Middleware(app, exp)
-Routes(app, upload)
+Routes(app, upload, __dirname)
 Serve(app, PORT)
