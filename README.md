@@ -26,4 +26,4 @@ And like the above. It's okay to use `npm` or `pnpm`.
 
 ### Too lazy?
 
-Are you too lazy to set-up everything? For my recommend to use DockerFile from katsuDocker instead :D
+Are you too lazy to set-up everything? For my recommend to use DockerFile from [katsuDocker](https://github.com/katsuDocker/file-uploader-dockerize) instead :D
